@@ -64,4 +64,4 @@ app.use((req, res, next) => {
 
 app.use('/', routes)
 
-app.listen(PORT, () => { console.log(`${APPNAME} running on port ${PORT}`) })
+app.listen(process.env.PORT, () => { console.log(`${APPNAME} running on port ${process.env.PORT}`) })
